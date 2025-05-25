@@ -24,7 +24,6 @@ public class ProdutoService {
     private final List<ObserverProduto> observador;
     private final ProdutoRepository produtoRepository;
 
-    // LISTAR TODOS OS PRODUTOS
     public ResponseEntity<List<ProdutoSaidaDTO>> listarTodosProdutos() {
         List<ProdutoSaidaDTO> produtos = produtoRepository.findAll()
                 .stream()
@@ -82,7 +81,6 @@ public class ProdutoService {
         return dto;
     }
 
-    // CONVERTER DTO DE ENTRADA PARA ENTIDADE
     private Produto converterParaEntidade(ProdutoEntradaDTO dto) {
         Produto produto = new Produto();
         produto.setNome(dto.getNome());

@@ -2,11 +2,9 @@ package com.back.SteelTech.Service;
 
 import com.back.SteelTech.Entity.Notificacao;
 import com.back.SteelTech.Entity.Produto;
-import com.back.SteelTech.Entity.Usuario;
 import com.back.SteelTech.Repository.NotificacaoRepository;
 import com.back.SteelTech.Repository.UsuarioRepository;
 
-import com.back.SteelTech.Service.ObserverProduto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

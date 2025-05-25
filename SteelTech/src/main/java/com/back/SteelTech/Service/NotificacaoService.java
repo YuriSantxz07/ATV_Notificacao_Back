@@ -19,7 +19,6 @@ public class NotificacaoService {
     private final NotificacaoRepository notificacaoRepository;
     private final UsuarioRepository usuarioRepository;
 
-    // Buscar todas notificações
     public ResponseEntity<List<NotificacaoDTO>> listarTodasNotificacoes() {
         List<NotificacaoDTO> notificacoes = notificacaoRepository.findAll().stream()
                 .map(this::converterParaDTO)
