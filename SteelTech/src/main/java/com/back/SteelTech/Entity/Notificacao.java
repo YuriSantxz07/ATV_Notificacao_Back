@@ -7,15 +7,15 @@ import lombok.Data;
 public class Notificacao {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
-    @ManyToOne
-    @JoinColumn(name = "cpf_usuario")
-    private Usuario usuario;
+    private Integer id;
 
     @ManyToOne
     @JoinColumn(name = "id_produto")
     private Produto produto;
+
+    @ManyToOne
+    @JoinColumn(name = "cpf_usuario")
+    private Usuario usuario;
 
     private String mensagem;
     private String categoria;
